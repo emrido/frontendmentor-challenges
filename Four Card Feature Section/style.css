@@ -1,0 +1,148 @@
+:root {
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+  --neutral-dark-blue: hsl(234, 12%, 34%);
+  --neutral-gray-blue: hsl(229, 6%, 66%);
+  --neutral-light-grey: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  background-color: var(--neutral-light-grey);
+  padding: 1.75rem;
+  height: 100vh;
+  color: var(--neutral-dark-blue);
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin: 4rem auto;
+  max-width: 33.33rem;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1.6rem;
+  max-width: 74rem;
+  margin: 0 auto;
+}
+
+p {
+  color: var(--neutral-gray-blue);
+  margin: .5rem 0;
+}
+
+section {
+  height: 14.5rem;
+  padding: 1.5rem;
+  line-height: 1.5rem;
+  border-top: 5px solid black;
+  border-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-position: bottom 1.75rem right 1.75rem;  
+  background-color: white;
+}
+
+#supervisor {
+  border-color: var(--primary-cyan);
+  background-image: url(images/icon-supervisor.svg);
+}
+
+#teambuilder {
+  border-color: var(--primary-red);
+  background-image: url(images/icon-team-builder.svg);
+}
+
+#karma {
+  border-color: var(--primary-orange);
+  background-image: url(images/icon-karma.svg);
+}
+
+#calculator {
+  border-color: var(--primary-blue);
+  background-image: url(images/icon-calculator.svg);
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 769px) {
+  
+  h1 {
+    font-weight: 200;
+    font-size: 2rem;
+  }
+  
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "left center-top right"
+      "left center-bottom right"
+    ;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  #supervisor {
+    grid-area: left;
+    align-self: center;
+  }
+
+  #teambuilder {  
+    grid-area: center-top;
+  }
+
+  #karma {
+    grid-area: center-bottom;
+  }
+
+  #calculator {
+    grid-area: right;
+    align-self: center;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}
