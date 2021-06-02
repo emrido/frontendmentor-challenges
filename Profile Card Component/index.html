@@ -7,55 +7,43 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Profile card component</title>
 
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos -->
-  <main>
-    <div class="card">
-      <div class="header">
-        <img src="./images/image-victor.jpg" alt="Victor">
-      </div>
-      <div class="bio">
-        Victor Crest <span id="age">26</span>
-        <p id="location">London</p>
-      </div>
-      <div class="footer">
-        <div class="stat">
-          <div class="stat-number">80K</div>
-          <div class="stat-desc">Followers</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">803K</div>
-          <div class="stat-desc">Likes</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">1.4K</div>
-          <div class="stat-desc">Photos</div>
-        </div>
-      </div>
+  <main class="card">
+    <div class="card__header">
+      <img src="./images/image-victor.jpg" alt="User photo profile" class="card__profile-image">
+    </div>
+    <div class="card__profile-details">
+      <h3 class="username">Victor Crest
+        <span class="age">26</span>
+      </h3>
+      <h4 class="location">London</h4>
+    </div>
+    <div class="card__footer">
+      <h4 class="user-stats">80K<br><span class="stat-desc">Followers</span></h4>
+      <h4 class="user-stats">803K<br><span class="stat-desc">Likes</span></h4>
+      <h4 class="user-stats">1.4K<br><span class="stat-desc">Photos</span></h4>
     </div>
   </main>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 
 </html>
