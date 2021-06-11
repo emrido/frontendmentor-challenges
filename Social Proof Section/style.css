@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+	--color-primary-very-dark-magenta: hsl(300, 43%, 22%);
+	--color-primary-soft--pink: hsl(333, 80%, 67%);
+
+	--color-neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
+	--color-neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+
+	--color-white: hsl(0, 0%, 100%);
+
+	--bp-mobile: 23.4375em;
+	--bp-desktop: 90em;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: "Spartan", sans-serif;
+	min-height: 100vh;
+	background-image: url(images/bg-pattern-top-desktop.svg),
+		url(images/bg-pattern-bottom-desktop.svg);
+	background-size: 40%, 70%;
+	background-repeat: no-repeat;
+	background-position: top left, bottom right;
+
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	max-width: 120rem;
+	margin: 0 auto;
+	padding-top: 15vh;
+}
+
+.heading-box {
+	flex: 0 0 40%;
+	margin-right: auto;
+	color: var(--color-primary-very-dark-magenta);
+}
+
+.heading {
+	font-size: 4.5rem;
+	line-height: 1;
+	margin-bottom: 1.5rem;
+}
+
+.heading-box p {
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+.ratings {
+	flex: 0 0 50%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 1rem;
+	color: var(--color-primary-very-dark-magenta);
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	background-color: var(--color-neutral-light-grayish-magenta);
+	border-radius: 0.5rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding: 2rem 3rem;
+	margin-bottom: 1.5rem;
+	min-width: 50rem;
+}
+
+.rating:nth-child(2) {
+	margin-left: 5rem;
+}
+
+.rating:last-child {
+	margin-left: 10rem;
+}
+
+.stars {
+	margin-right: 3rem;
+}
+
+.star {
+	height: 1.6rem;
+	width: 1.6rem;
+	margin-right: 0.5rem;
+}
+
+.user-reviews {
+	display: flex;
+	align-items: flex-start;
+}
+
+.review {
+	background-color: var(--color-primary-very-dark-magenta);
+	color: var(--color-white);
+	margin-right: 3rem;
+	padding: 3rem;
+	border-radius: 0.5rem;
+}
+
+.review:nth-child(2) {
+	margin-top: 2rem;
+}
+
+.review:last-child {
+	margin-top: 4rem;
+	margin-right: 0;
+}
+
+.review__user {
+	display: flex;
+	align-items: center;
+	margin-top: 1.3rem;
+}
+
+.review__photo {
+	border-radius: 50%;
+	height: 4.5rem;
+	width: 4.5rem;
+	margin-right: 1.5rem;
+	display: block;
+}
+
+.review__user-name {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.review__user-detail {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: var(--color-primary-soft--pink);
+}
+
+.review__text {
+	font-size: 1.3rem;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	margin: 1.6rem 0;
+}
+
+.attribution {
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+	width: 100%;
+	text-align: center;
+	color: var(--color-primary-very-dark-magenta);
+}
+
+.attribution__link:link,
+.attribution__link:visited {
+	text-decoration: none;
+	color: var(--color-primary-soft--pink);
+	display: inline-block;
+	transition: all 0.2s;
+}
+
+.attribution__link:hover {
+	transform: translateY(-0.25rem) scale(1.2) skewY(5deg);
+}
+
+@media only screen and (max-width: 78.0625em) {
+	body {
+		padding-top: 10vh;
+		width: 90%;
+	}
+	.heading {
+		margin-bottom: 3rem;
+	}
+	.heading-box {
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.ratings {
+		flex-basis: 100%;
+		align-items: flex-end;
+		margin: 2rem auto;
+	}
+	.rating {
+		margin-left: 0;
+		min-width: 0;
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+	}
+	.stars {
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+	.user-reviews {
+		flex-wrap: wrap;
+	}
+	.review {
+		margin-right: 0;
+	}
+	.review:last-child {
+		margin-top: 2rem;
+	}
+}
+
+@media only screen and (max-width: 39.5625em) {
+	html {
+		font-size: 50%;
+	}
+	body {
+		background-image: url(images/bg-pattern-top-mobile.svg),
+			url(images/bg-pattern-bottom-mobile.svg);
+		background-size: 90%, 100%;
+		background-repeat: no-repeat;
+		background-position: top, bottom;
+	}
+	.heading {
+		font-size: 4rem;
+	}
+	.star {
+		height: 2rem;
+		width: 2rem;
+	}
+}
