@@ -11,3 +11,5 @@ Repositories for all [my Frontend Mentor](https://www.frontendmentor.io/profile/
 [Social Proof Section](https://emrido.github.io/frontendmentor-challenges/Social%20Proof%20Section/index.html)
 
 [Stats Preview Card Component](https://emrido.github.io/frontendmentor-challenges/Stats%20Preview%20Card%20Component/)
+
+[3 Column Preview Card Component](https://emrido.github.io/frontendmentor-challenges/3%20Column%20Preview%20Card%20Component/)

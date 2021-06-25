@@ -97,7 +97,7 @@ section div:last-of-type button {
 section button {
 	font-family: inherit;
 	width: 75%;
-	border: 2px white solid;
+	border: 2px var(--color-neutral-very-light-gray) solid;
 	border-radius: 2em;
 	margin-top: auto;
 	font-size: 1.5rem;
@@ -108,7 +108,7 @@ section button {
 
 section div button:hover {
 	background-color: transparent;
-	color: white;
+	color: var(--color-neutral-very-light-gray);
 }
 
 footer {
