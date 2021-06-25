@@ -9,3 +9,5 @@ Repositories for all [my Frontend Mentor](https://www.frontendmentor.io/profile/
 [Huddle Landing Page](https://emrido.github.io/frontendmentor-challenges/Huddle%20Landing%20Page/index.html)
 
 [Social Proof Section](https://emrido.github.io/frontendmentor-challenges/Social%20Proof%20Section/index.html)
+
+[Stats Preview Card Component](https://emrido.github.io/frontendmentor-challenges/Stats%20Preview%20Card%20Component/)
