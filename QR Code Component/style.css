@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+
+  --font-size: 62.5%;
+  --font-family: "Outfit", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(var(--font-size) * 1.5);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  text-align: center;
+  background-color: var(--color-light-gray);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  color: var(--color-dark-blue);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+p {
+  color: var(--color-grayish-blue);
+  font-size: 1.05rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: var(--color-white);
+  width: 320px;
+  height: 497px;
+  margin: auto;
+  border-radius: 19px;
+  padding: 1rem;
+}
+
+.img-container {
+  border-radius: 10px;
+}
+
+.content p {
+  margin: auto;
+  max-width: 25ch;
+}
+
+footer {
+  margin-top: 5rem;
+}
+
+footer a:link,
+footer a:visited {
+  text-decoration: none;
+  /* color: var(--color-primary-very-dark-cyan); */
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+footer a:hover {
+  transform: scale(1.2) skewY(5deg);
+  background-color: var(--color-dark-blue);
+  color: var(--color-light-gray);
+}
