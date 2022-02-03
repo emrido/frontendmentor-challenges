@@ -54,6 +54,7 @@ img {
   margin: auto;
   border-radius: 19px;
   padding: 1rem;
+  box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.15);
 }
 
 .img-container {
@@ -72,7 +73,7 @@ footer {
 footer a:link,
 footer a:visited {
   text-decoration: none;
-  /* color: var(--color-primary-very-dark-cyan); */
+  color: var(--color-dark-blue);
   display: inline-block;
   transition: all 0.2s ease-in-out;
 }
