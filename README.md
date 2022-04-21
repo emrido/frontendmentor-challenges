@@ -15,3 +15,5 @@ Repositories for all [my Frontend Mentor](https://www.frontendmentor.io/profile/
 [3 Column Preview Card Component](https://emrido.github.io/frontendmentor-challenges/3%20Column%20Preview%20Card%20Component/)
 
 [QR Code Component](https://emrido.github.io/frontendmentor-challenges/QR%20Code%20Component/index.html)
+
+[Order Summary Component](https://emrido.github.io/frontendmentor-challenges/Order%20Summary%20Component/)
