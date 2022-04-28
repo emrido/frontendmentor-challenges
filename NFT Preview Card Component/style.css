@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --cp-soft-blue: hsl(215, 51%, 70%);
+  --cp-cyan: hsl(178, 100%, 50%);
+
+  --cn-blue-1: hsl(217, 54%, 11%);
+  --cn-blue-2: hsl(216, 50%, 16%);
+  --cn-blue-3: hsl(215, 32%, 27%);
+  --cn-white: hsl(0, 0%, 100%);
+
+  --font-family: "Outfit", sans-serif;
+  --p-font-size: 1.8rem;
+
+  --br: 12px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--cn-blue-1);
+  display: grid;
+  place-content: center;
+  grid-template-columns: minmax(32rem, 35rem);
+  font-family: var(--font-family);
+}
+
+h1 {
+  color: var(--cn-white);
+  font-weight: 600;
+}
+
+h1:hover {
+  color: var(--cp-cyan);
+  cursor: pointer;
+}
+
+p {
+  font-size: var(--p-font-size);
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card {
+  background-color: var(--cn-blue-2);
+  padding: 2.5rem;
+  border-radius: var(--br);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.img-container {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  position: relative;
+}
+
+.img-container,
+.img-container::before,
+.img-container img {
+  border-radius: var(--br);
+}
+
+.img-container:hover::before {
+  content: "";
+  background: url(./images/icon-view.svg);
+  background-color: hsla(178, 100%, 50%, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.content {
+  color: var(--cp-soft-blue);
+  font-weight: 300;
+  margin-top: 2.5rem;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px hsla(215, 51%, 70%, 0.5) solid;
+}
+
+.details > * {
+  align-items: center;
+  display: flex;
+}
+
+.details img {
+  margin-right: 1rem;
+}
+
+.price {
+  font-weight: 400;
+  color: var(--cp-cyan);
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+}
+
+.creator img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid var(--cn-white);
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+.creator strong {
+  color: var(--cn-white);
+  font-weight: 400;
+}
+
+.creator:hover strong {
+  color: var(--cp-cyan);
+  cursor: pointer;
+}
+
+footer {
+  color: var(--cp-soft-blue);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+footer a:link,
+footer a:visited {
+  color: var(--cp-cyan);
+  margin-top: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+footer a:hover {
+  transform: scale(1.2) skewY(3deg);
+}
