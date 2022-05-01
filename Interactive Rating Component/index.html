@@ -68,11 +68,14 @@
       const submitBtn = document.querySelector("#submit-btn");
       const rateStateEl = document.querySelector(".rate-state");
       const thanksStateEl = document.querySelector(".thanks-state");
+      const rateGivenEl = document.querySelector("#rate-given");
+
       ratings.forEach((el) => {
         el.addEventListener("click", () => {
           submitBtn.disabled = false;
           removeActive(ratings);
           el.classList.toggle("active");
+          rateGivenEl.innerHTML = el.innerHTML;
         });
       });
 
