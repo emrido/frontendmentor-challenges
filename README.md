@@ -19,3 +19,5 @@ Repositories for all [my Frontend Mentor](https://www.frontendmentor.io/profile/
 [Order Summary Component](https://emrido.github.io/frontendmentor-challenges/Order%20Summary%20Component/)
 
 [NFT Preview Card Component](https://emrido.github.io/frontendmentor-challenges/NFT%20Preview%20Card%20Component/index.html)
+
+[Interactive Rating Component](https://emrido.github.io/frontendmentor-challenges/Interactive%20Rating%20Component/index.html)
