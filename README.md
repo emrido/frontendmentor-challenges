@@ -22,6 +22,10 @@ Repositories for all [my Frontend Mentor](https://www.frontendmentor.io/profile/
 
 [Interactive Rating Component](https://emrido.github.io/frontendmentor-challenges/Interactive%20Rating%20Component/index.html)
 
+<<<<<<< HEAD
 [Testimonial Grid Section](https://emrido.github.io/frontendmentor-challenges/Testimonial%20Grid%20Section/index.html)
 
 [Results Summary Component](https://emrido.github.io/frontendmentor-challenges/Results%20Summary%20Component/index.html)
+=======
+[Testimonials Grid Section](https://emrido.github.io/frontendmentor-challenges/Testimonials%20Grid%20Section/index.html)
+>>>>>>> b2a3394f5088842c6915903e969ed81c823c171e
