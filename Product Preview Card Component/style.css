@@ -152,6 +152,10 @@ footer a:hover {
     flex-direction: row;
   }
 
+  h1 {
+    max-width: 10ch;
+  }
+
   .img-container img {
     border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
