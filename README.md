@@ -25,3 +25,5 @@ Repositories for all [my Frontend Mentor](https://www.frontendmentor.io/profile/
 [Testimonial Grid Section](https://emrido.github.io/frontendmentor-challenges/Testimonial%20Grid%20Section/index.html)
 
 [Results Summary Component](https://emrido.github.io/frontendmentor-challenges/Results%20Summary%20Component/index.html)
+
+[Product Preview Card Component](https://emrido.github.io/frontendmentor-challenges/Product%20Preview%20Card%20Component/index.html)
