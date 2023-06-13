@@ -27,3 +27,5 @@ Repositories for all [my Frontend Mentor](https://www.frontendmentor.io/profile/
 [Results Summary Component](https://emrido.github.io/frontendmentor-challenges/Results%20Summary%20Component/index.html)
 
 [Product Preview Card Component](https://emrido.github.io/frontendmentor-challenges/Product%20Preview%20Card%20Component/index.html)
+
+[Workit Landing Page](https://emrido.github.io/frontendmentor-challenges/Workit%20Landing%20Page/index.html)
