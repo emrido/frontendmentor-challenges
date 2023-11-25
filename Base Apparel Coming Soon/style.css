@@ -55,7 +55,7 @@ main {
   top: 0;
   width: 50%;
   height: 100vh;
-  background-image: url("/images/hero-desktop.jpg");
+  background-image: url("./images/hero-desktop.jpg");
   background-size: cover;
 }
 
