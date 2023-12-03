@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+
+:root {
+  --html-color: hsla(22, 100%, 60%, 1);
+  --css-color: hsla(151, 68%, 51%, 1);
+  --js-color: hsla(223, 100%, 59%, 1);
+  --acc-color: hsla(277, 91%, 56%, 1);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  min-height: 100dvh;
+  width: 100%;
+  color: #313e51;
+  background-color: hsla(220, 38%, 97%, 1);
+  background-image: url(./assets/images/pattern-background-desktop-light.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header,
+section {
+  max-width: 80.5rem;
+  margin-inline: auto;
+  padding-inline: 4rem;
+  padding-block: 1rem;
+}
+
+header {
+  min-height: 12rem;
+  display: flex;
+}
+
+header div {
+  margin-inline-start: auto;
+  margin-block: auto;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+h1 span {
+  font-weight: 500;
+}
+
+p {
+  font-style: italic;
+  font-weight: 400;
+  color: #626c7f;
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(32.25rem, 1fr));
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+button {
+  border-radius: 24px;
+  border: none;
+  height: 6rem;
+  font-size: 1.75rem;
+  text-align: left;
+  font-family: inherit;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 2rem;
+  background-color: #fff;
+  box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+  transition: transform ease-in-out 200ms;
+}
+
+button:hover:not(.selected, .correct) {
+  cursor: pointer;
+  border: 3px solid hsla(277, 91%, 56%, 1);
+  border-left-width: 8px;
+  border-bottom-width: 8px;
+
+  transform: translate(5px, -5px);
+}
+
+button:hover .i-letter {
+  background-color: hsla(278, 100%, 95%, 1);
+  color: hsla(277, 91%, 56%, 1);
+}
+
+button.correct:hover:not(.selected) .i-letter {
+  background-color: hsla(220, 38%, 97%, 1);
+  color: #626c7f;
+}
+
+button:active {
+  transform: translate(-5px, 5px);
+}
+
+button.selected {
+  border: 3px solid hsla(277, 91%, 56%, 1);
+}
+
+button.selected .i-letter {
+  background-color: hsla(277, 91%, 56%, 1);
+  color: #fff;
+}
+
+.icon {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+button.b-html:is(:hover, :active) {
+  border-color: var(--html-color);
+}
+button.b-css:is(:hover, :active) {
+  border-color: var(--css-color);
+}
+button.b-js:is(:hover, :active) {
+  border-color: var(--js-color);
+}
+button.b-acc:is(:hover, :active) {
+  border-color: var(--acc-color);
+}
+
+.i-letter {
+  background-color: hsla(220, 38%, 97%, 1);
+  font-weight: 500;
+  font-style: normal;
+  display: grid;
+  place-content: center;
+  color: hsla(219, 13%, 44%, 1);
+}
+
+.i-html {
+  background-color: #fff1e9;
+  background-image: url("assets/images/icon-html.svg");
+}
+
+.i-css {
+  background-color: #e0fdef;
+  background-image: url("assets/images/icon-css.svg");
+}
+
+.i-js {
+  background-color: #ebf0ff;
+  background-image: url("assets/images/icon-js.svg");
+}
+
+.i-acc {
+  background-color: #f6e7ff;
+  background-image: url("assets/images/icon-accessibility.svg");
+}
+
+.i-result {
+  margin-inline-start: auto;
+}
+
+button.selected.correct {
+  border-color: hsla(151, 70%, 50%, 1);
+}
+
+button.selected.incorrect {
+  border-color: hsla(0, 82%, 63%, 1);
+}
+
+button.selected.correct .i-letter {
+  background-color: hsla(151, 70%, 50%, 1);
+}
+
+button.selected.incorrect .i-letter {
+  background-color: hsla(0, 82%, 63%, 1);
+}
+
+.correct .i-result {
+  background-image: url(assets/images/icon-correct.svg);
+}
+
+.incorrect .i-result {
+  background-image: url(assets/images/icon-error.svg);
+}
+
+.primary {
+  background-color: hsla(277, 91%, 56%, 1);
+  color: #fff;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-block-start: 0.5rem;
+  margin-block-end: 1rem;
+}
+
+button.primary:is(:hover, :active) {
+  transform: none;
+  border-width: 0;
+  opacity: 0.5;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.question h2 {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #626c7f;
+  margin-bottom: 1.7rem;
+}
+
+.question p {
+  color: #313e51;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 20ch;
+}
+
+.progress-bar {
+  margin-block-start: auto;
+  margin-block-end: 7rem;
+  height: 1rem;
+  max-width: 29rem;
+  background-color: #fff;
+  border-radius: 62.5rem;
+  position: relative;
+}
+
+.progress-bar::after {
+  position: absolute;
+  content: "";
+  background-color: hsla(277, 91%, 56%, 1);
+  width: var(--progress, 0%);
+  height: 1rem;
+  border-radius: 6.2rem;
+  border: 0.25rem solid #fff;
+}
+
+/* RESULT PAGE */
+
+.result {
+  display: flex;
+  flex-direction: column;
+}
+
+.topic-bar {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: #313e51;
+}
+
+.result-card {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 24px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #626c7f;
+  margin-bottom: 2rem;
+  box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+}
+
+.score {
+  margin-block: 0.75rem 0.5rem;
+  color: #313e51;
+  font-size: 9rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1190px) {
+  p {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .progress-bar {
+    margin-top: 2.5rem;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    background-image: url(assets/images/pattern-background-tablet-light.svg);
+  }
+  header,
+  section {
+    padding-inline: 1.5rem;
+  }
+
+  header {
+    min-height: 10dvh;
+    margin-block-end: 3rem;
+  }
+  section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(assets/images/pattern-background-mobile-light.svg);
+  }
+  html {
+    font-size: 14px;
+  }
+}
