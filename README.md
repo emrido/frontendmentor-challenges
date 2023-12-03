@@ -31,3 +31,5 @@ Repositories for all [my Frontend Mentor](https://www.frontendmentor.io/profile/
 [Workit Landing Page](https://emrido.github.io/frontendmentor-challenges/Workit%20Landing%20Page/index.html)
 
 [Base Apparel Coming Soon](https://emrido.github.io/frontendmentor-challenges/Base%20Apparel%20Coming%20Soon/index.html)
+
+[Frontend Quizz App](https://emrido.github.io/frontendmentor-challenges/Frontend%20Quiz%20App/index.html)
